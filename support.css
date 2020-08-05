@@ -12,9 +12,9 @@ body{
 }
 
 h2{
-    font-size: 1.125rem;
-    line-height: 1.5;
-    margin: 0 0 24px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 0 0 48px;
     font-weight: 400;
     letter-spacing: 0;
     color: #3c4043;
@@ -38,7 +38,6 @@ h5{
     color: #80868b;
 }
 
-
 .help{
     text-decoration: none;
     letter-spacing: 0.25px;
@@ -49,19 +48,15 @@ h5{
     color: rgb(41, 98, 255);
 }
 
-hr{
-    
-}
 .fluid{
     width: 90%;
     margin: 0 auto;
 }
 .container{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding: 10% 7%;
-    border-bottom: 1px solid red: ;
+    padding: 5% 7%;
 }
 
 .popular_articles{
@@ -69,6 +64,10 @@ hr{
     margin: auto;
     text-align: center;
     padding: 5%;
+}
+
+.line{
+    border-bottom: 1px solid #80868b;
 }
 
 .card{
