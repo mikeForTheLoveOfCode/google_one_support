@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0 0 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #3c4043;
+}
+
+h4{
+    color: #3c4043;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: .00625em;
+}
+
+h5{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin: 0 0 16px;
+    letter-spacing: .01785714em;
+    cursor: pointer;
+    color: #80868b;
+}
+
+
+.help{
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: solid;
+    color: rgb(41, 98, 255);
+}
+
+hr{
+    
+}
+.fluid{
+    width: 90%;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 7%;
+    border-bottom: 1px solid red: ;
+}
+
+.popular_articles{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+}
+
+.card{
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 912px;
+    flex-wrap: wrap;
+    overflow-x: visible;
+}
+
+.box{
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 304px;
+    height: 252px;
+    /* margin: 3%; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-decoration: none;
+    outline: none;
+    padding: 24px;
+    margin: 0 24px 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
+
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: #e8eaed;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(41, 98, 255);
+    color: #fff;
+    outline: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.description{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #5f6368;
+    letter-spacing: 0.01428rem;
+    padding-bottom: 24px;
+}
+
+@media screen and (max-width: 500px){
+    .card{
+        flex-direction: row;
+        margin: -4px;
+        padding: 4px;
+        overflow-x: hidden;
+    }
+
+    .box{
+        width: 232px;
+    }
+}
