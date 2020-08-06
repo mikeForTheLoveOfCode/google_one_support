@@ -39,14 +39,13 @@ h5{
 }
 
 .help{
-    text-decoration: none;
     letter-spacing: 0.25px;
     line-height: 20px;
     text-align: center;
     font-weight: 700;
     text-decoration: solid;
     color: rgb(41, 98, 255);
-    margin: 48px 0 0;
+    padding: 5%;
 }
 
 .fluid{
@@ -75,9 +74,12 @@ h5{
     position: relative;
     left: 50%;
     transform: translate(-50%);
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px; */
     max-width: 912px;
     flex-wrap: wrap;
     overflow-x: visible;
@@ -92,11 +94,8 @@ h5{
     flex-direction: column;
     justify-content: space-between;
     
-    text-decoration: none;
-    outline: none;
     padding: 24px;
     margin: 0 24px 24px;
-    /* overflow: hidden; */
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
 
     cursor: pointer;
@@ -108,36 +107,44 @@ h5{
 }
 @media screen and (max-width: 500px){
     .card{
-        /* position: static; */
+        position: static;
         left: 0;
         transform: translate(0%);
         /* justify-content: center; */
-        overflow-x: scroll;
+        flex-direction: row;
+        overflow: scroll;
         flex-wrap: nowrap;
     }
 
     
 }
-@media screen and (max-width: 912px){
+/* @media screen and (max-width: 912px){
     .card{
         /* position: static; */
         left: 0;
         transform: translate(0%);
         /* justify-content: center; */
-        overflow-x: scroll;
-        flex-wrap: nowrap;
+        /* overflow-x: scroll;
+        flex-wrap: nowrap; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     
-}
+} */
 
 .btn{
     padding: 0.5rem 1.5rem;
-    background-color: rgb(41, 98, 255);
+    background-color: #2962ff;
+    cursor: pointer;
     color: #fff;
     outline: none;
     font-weight: 700;
     border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: rgb(41, 98, 255);
 }
 
 .description{
