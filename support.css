@@ -46,6 +46,7 @@ h5{
     font-weight: 700;
     text-decoration: solid;
     color: rgb(41, 98, 255);
+    margin: 48px 0 0;
 }
 
 .fluid{
@@ -72,7 +73,6 @@ h5{
 
 .card{
     position: relative;
-    /* top: 50%; */
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -85,27 +85,50 @@ h5{
 
 .box{
     text-align: center;
-    /* border: 1px solid black; */
     width: 304px;
     height: 252px;
-    /* margin: 3%; */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     
     text-decoration: none;
     outline: none;
     padding: 24px;
     margin: 0 24px 24px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
 
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .box:hover{
     background-color: #e8eaed;
+}
+@media screen and (max-width: 500px){
+    .card{
+        /* position: static; */
+        left: 0;
+        transform: translate(0%);
+        /* justify-content: center; */
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+
+    
+}
+@media screen and (max-width: 912px){
+    .card{
+        /* position: static; */
+        left: 0;
+        transform: translate(0%);
+        /* justify-content: center; */
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+
+    
 }
 
 .btn{
@@ -126,15 +149,3 @@ h5{
     padding-bottom: 48px;
 }
 
-@media screen and (max-width: 500px){
-    .card{
-        flex-direction: row;
-        margin: -4px;
-        padding: 4px;
-        overflow-x: hidden;
-    }
-
-    .box{
-        width: 232px;
-    }
-}
